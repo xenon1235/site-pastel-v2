@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda de Pastéis</title> <link rel="shortcut icon" href="imagem/pastelv2.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"> 
+</head>
+<body>
+    <header>
+        <h1>Venda de Pastéis - Carne</h1>
+    </header>
+
+    <main>
+        <section id="produto">
+            <h2>Pastel de Carne</h2>
+            <img src="imagem/pastelv2.jpg" alt="Pastel de Carne">
+            <p>R$ 4,00 cada.</p>
+            <div id="controle-quantidade">
+                <button id="decrementar">-</button>
+                <span id="quantidade">1</span>
+                <button id="incrementar">+</button>
+            </div>
+            <button id="adicionar-carrinho">Adicionar ao Carrinho</button>
+        </section>
+
+        <section id="carrinho">
+            <h2>Carrinho</h2>
+            <p id="total">Total: R$ 4,00</p>
+            <div id="chave-pix">
+                <h3>Chave PIX:</h3>
+                <pre>richardteixeiramancilha@gmail.com</pre>
+            </div>
+            <div id="qr-code">
+                <h3>QR Code para Pagamento:</h3>
+                <img src="imagem/qr code.jpg" alt="QR Code" width="400px" height="400px">
+            </div>
+            <button id="finalizar-compra">Finalizar Compra</button>
+            <div id="mensagem" class="hidden">
+                <p>Seu pagamento foi aprovado! Estamos a caminho. Obrigado!</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
